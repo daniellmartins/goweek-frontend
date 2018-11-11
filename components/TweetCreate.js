@@ -65,12 +65,14 @@ export class TweetCreate extends Component {
   }
 }
 
-const StyledTweetCreate = styled.div``;
+const StyledTweetCreate = styled.div`
+  padding: 8px;
+`;
 
 const Form = styled.form`
   width: 100%;
   background-color: #e9f1f6;
-  padding: 20px;
+  padding: 16px;
   border-radius: 5px;
   margin: 30px 0 0;
 

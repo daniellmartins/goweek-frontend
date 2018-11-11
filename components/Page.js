@@ -9,7 +9,12 @@ export const Page = ({ children }) => (
 );
 
 const StyledPage = styled.div`
-  height: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
 `;
 
 const StyledGlobal = createGlobalStyle`
@@ -31,7 +36,7 @@ const StyledGlobal = createGlobalStyle`
   html,
   body,
   #__next {
-    height: 100%;
+    min-height: 100%;
   }
 
   button {

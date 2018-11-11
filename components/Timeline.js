@@ -57,14 +57,12 @@ export const Timeline = () => (
                 if (!subscriptionData.data) return prev;
                 const { tweetSubscription } = subscriptionData.data;
                 const { mutation, node } = tweetSubscription;
-
                 if (mutation === "CREATED") {
                   return {
                     ...prev,
                     tweets: [node, ...prev.tweets]
                   };
                 }
-
                 if (mutation === "UPDATED") {
                   return {
                     ...prev,
@@ -73,7 +71,6 @@ export const Timeline = () => (
                     )
                   };
                 }
-
                 return prev;
               }
             });
@@ -89,8 +86,10 @@ const StyledTimeline = styled.div`
   flex-direction: column;
   align-items: stretch;
 
-  width: 600px;
-  margin: 50px auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0 0;
 `;
 
 const Logo = styled.img``;

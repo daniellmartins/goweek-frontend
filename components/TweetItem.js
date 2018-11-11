@@ -16,7 +16,7 @@ export const TweetItem = ({ tweet }) => (
 const StyledTweetItem = styled.div`
   color: #1c2022;
 
-  padding: 20px;
+  padding: 16px;
   margin: 0;
 
   cursor: pointer;
@@ -33,8 +33,13 @@ const StyledTweetItem = styled.div`
     border: 0;
   }
 
+  strong {
+    font-size: 14px;
+  }
+
   p {
     font-size: 14px;
-    margin: 15px 0;
+    line-height: 1.5;
+    margin: 8px 0;
   }
 `;
