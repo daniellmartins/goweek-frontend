@@ -33,13 +33,7 @@ const StyledTweetItem = styled.div`
     border: 0;
   }
 
-  strong {
-    font-size: 14px;
-  }
-
   p {
-    font-size: 14px;
-    line-height: 1.5;
     margin: 8px 0;
   }
 `;

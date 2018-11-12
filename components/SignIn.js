@@ -103,6 +103,9 @@ const StyledSignIn = styled.div`
   }
 `;
 
-const Logo = styled.img``;
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+`;
 
 const Form = styled.form``;

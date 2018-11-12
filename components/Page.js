@@ -18,25 +18,32 @@ const StyledPage = styled.div`
 `;
 
 const StyledGlobal = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
   }
 
+  html {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
+    color: #14171a;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #e6ecf0;
+    overflow-y: scroll;
   }
 
   html,
   body,
   #__next {
-    min-height: 100%;
+    height: 100%;
   }
 
   button {

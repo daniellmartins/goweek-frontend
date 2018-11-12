@@ -11,9 +11,9 @@ export class TweetList extends Component {
 
   render() {
     const { loading, error, data } = this.props;
-
+    console.log(data);
     if (loading) return <p>loading...</p>;
-    if (error) return <p>error</p>;
+    if (error || !data.tweets) return <p>error</p>;
     return (
       <StyledTweetList>
         {data.tweets.map(tweet => (
@@ -24,4 +24,6 @@ export class TweetList extends Component {
   }
 }
 
-const StyledTweetList = styled.div``;
+const StyledTweetList = styled.div`
+  background-color: #ffffff;
+`;

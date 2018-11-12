@@ -67,6 +67,7 @@ export class TweetCreate extends Component {
 
 const StyledTweetCreate = styled.div`
   padding: 8px;
+  background-color: #ffffff;
 `;
 
 const Form = styled.form`
@@ -77,11 +78,10 @@ const Form = styled.form`
   margin: 30px 0 0;
 
   textarea {
-    font-size: 14px;
-
     padding: 15px;
     width: 100%;
     border: 3px solid #d8e5ed;
     border-radius: 5px;
+    outline: none;
   }
 `;

@@ -3,7 +3,7 @@ import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import styled from "styled-components";
 
-import { TweetCreate, TweetList } from "./";
+import { Header, TweetCreate, TweetList } from "./";
 
 const TWEETS_QUERY = gql`
   {
@@ -42,7 +42,7 @@ const TWEET_SUBSCRIPTION = gql`
 
 export const Timeline = () => (
   <StyledTimeline>
-    <Logo src="/static/twitter.svg" alt="[Twitter - Logo]" />
+    <Header />
     <TweetCreate />
 
     <Query query={TWEETS_QUERY}>
@@ -89,7 +89,5 @@ const StyledTimeline = styled.div`
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 30px 0 0;
+  padding: 56px 0 0;
 `;
-
-const Logo = styled.img``;

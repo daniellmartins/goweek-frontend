@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ApolloConsumer } from "react-apollo";
 import cookie from "cookie";
 
 import { checkLoggedIn, redirect } from "../lib";
